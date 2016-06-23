@@ -272,8 +272,7 @@ class CAS_CookieJar
     protected function discardCookie ($cookie)
     {
         if (!isset($cookie['domain'])
-            || !isset($cookie['path'])
-            || !isset($cookie['path'])
+            || !isset($cookie['path']))
         ) {
             throw new CAS_InvalidArgumentException('Invalid Cookie array passed.');
         }
